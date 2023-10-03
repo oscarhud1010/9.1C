@@ -30,13 +30,13 @@ export default class NavBar extends Component {
                         onClick={this.handleItemClick}
                     />
                     <Menu.Item
-                        href='//localhost:3000/login'   
+                        href='/login'   
                         name='login'
                         active={activeItem === 'login'}
                         onClick={this.handleItemClick}
                     />
                     <Menu.Item
-                        href='//localhost:3000/create-account' 
+                        href='/create-account' 
                         name='createAccount'
                         active={activeItem === 'createAccount'}
                         onClick={this.handleItemClick}
