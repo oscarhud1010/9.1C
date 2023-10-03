@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 export default class NavBar extends Component {
     state = {}
@@ -30,13 +31,13 @@ export default class NavBar extends Component {
                         onClick={this.handleItemClick}
                     />
                     <Menu.Item
-                        href='/login'   
+                        as={Link} to='/login' 
                         name='login'
                         active={activeItem === 'login'}
                         onClick={this.handleItemClick}
                     />
                     <Menu.Item
-                        href='/create-account' 
+                        as={Link} to='/create-account' // Use Link component with 'to' attribute
                         name='createAccount'
                         active={activeItem === 'createAccount'}
                         onClick={this.handleItemClick}
